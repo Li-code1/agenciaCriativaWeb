@@ -1,0 +1,113 @@
+```markdown
+# Agência Criativa Web 🌐🎨
+
+Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5** e **CSS3**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox** e **CSS Grid**.  
+O projeto demonstra boas práticas de semântica, acessibilidade e adaptação para diferentes tamanhos de tela.
+
+---
+
+## 🚀 Funcionalidades
+
+- **Layout responsivo**: adaptável para desktop, tablet e mobile.
+- **Menu de navegação**:
+  - Alinhado com Flexbox.
+  - Versão responsiva com hambúrguer menu para telas menores.
+- **Seções principais**:
+  - **Home**: banner de boas-vindas com destaque para o diferencial da agência.
+  - **Sobre Nós**: descrição da agência e seus valores.
+  - **Serviços**: estruturados em **CSS Grid** para um layout flexível.
+  - **Depoimentos**: comentários fictícios de clientes.
+  - **Contato**: informações de contato e formulário acessível.
+- **Formulário de contato**:
+  - Campos para nome, e-mail e mensagem.
+  - Labels e atributos `required` para acessibilidade.
+- **Imagens responsivas** com `srcset` e `sizes`.
+- **Unidades relativas** (`rem`, `em`, `%`, `vh`, `vw`, `fr`) para garantir flexibilidade.
+- **Media queries** para adaptação em diferentes resoluções.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **HTML5**: estrutura semântica e acessível.
+- **CSS3**:
+  - Flexbox para alinhamento.
+  - CSS Grid para layout dos serviços.
+  - Variáveis CSS para cores e espaçamentos.
+  - Media queries para responsividade.
+- **Google Fonts**: tipografia moderna (Inter).
+- **JavaScript simples**: atualização automática do ano no rodapé.
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+/
+├── index.html        # Página principal
+├── estilos.css       # Estilos externos
+└── README.md         # Documentação do projeto
+```
+
+---
+
+## 🎨 Identidade visual
+
+- **Paleta de cores**:
+  - Fundo escuro moderno (`#0b0f14`, `#111720`).
+  - Azul primário (`#4f7dfd`) e verde acento (`#7af0c3`).
+  - Texto claro (`#eaf0ff`) e secundário (`#b8c3da`).
+- **Tipografia**: [Inter](https://fonts.google.com/specimen/Inter), limpa e profissional.
+- **Estilo**: moderno, minimalista e com foco em acessibilidade.
+
+---
+
+## 📱 Responsividade
+
+- Layout adaptado com **media queries**:
+  - Até **1024px**: ajustes em grids e hero.
+  - Até **768px**: menu hambúrguer, grids empilhados.
+- Imagens otimizadas com `srcset` e `sizes`.
+- Uso de unidades relativas para escalabilidade.
+
+---
+
+## 🧩 Acessibilidade
+
+- Uso de elementos semânticos (`header`, `main`, `section`, `nav`, `footer`).
+- Labels associados a inputs.
+- `aria-label`, `aria-labelledby` e `aria-describedby` para navegação assistiva.
+- Link de **skip to content** para leitores de tela.
+- Foco visível em elementos interativos.
+
+---
+
+## 📖 Como executar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/Li-code1/agenciaCriativaWeb.git
+   ```
+2. Acesse a pasta do projeto:
+   ```bash
+   cd agencia-criativa-web
+   ```
+3. Abra o arquivo `index.html` em qualquer navegador moderno.
+
+---
+
+## 📌 Melhorias futuras
+
+- Implementar envio real do formulário com backend (Node.js, PHP ou outro).
+- Adicionar seção de portfólio com projetos interativos.
+- Criar animações leves com CSS para transições.
+
+---
+
+## 📄 Licença
+
+Este projeto é de uso livre para fins educacionais e demonstração.  
+Sinta-se à vontade para adaptar e evoluir conforme suas necessidades.
+
+---
+```
