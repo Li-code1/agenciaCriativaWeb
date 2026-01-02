@@ -13,26 +13,27 @@
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
 
-  <header class="topo" role="banner">
-    <div class="container header-container">
-      <a href="#home" class="logo" aria-label="Página inicial Agência Criativa Web">
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <a href="#home" class="header__logo" aria-label="Página inicial Agência Criativa Web">
         <span aria-hidden="true">🎨</span>
-        <span class="logo-text">Agência Criativa Web</span>
+        <span class="header__logo-text">Agência Criativa Web</span>
       </a>
 
-      <input type="checkbox" id="toggle-menu" class="toggle-menu" aria-label="Abrir ou fechar menu de navegação">
-      <label for="toggle-menu" class="menu-btn" aria-hidden="true">
-        <span class="menu-icon"></span>
-        <span class="menu-text">Menu</span>
+      <input type="checkbox" id="toggle-menu" class="header__toggle" aria-label="Abrir ou fechar menu de navegação">
+      <label for="toggle-menu" class="header__menu-btn" aria-hidden="true">
+        <span class="header__menu-icon"></span>
+        <span class="header__menu-text">Menu</span>
       </label>
 
-      <nav class="navegacao" aria-label="Navegação principal">
-        <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#sobre">Sobre Nós</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+      <nav class="header__nav" aria-label="Navegação principal">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#home">Home</a></li>
+          <li class="header__menu-item"><a href="#sobre">Sobre Nós</a></li>
+          <li class="header__menu-item"><a href="#servicos">Serviços</a></li>
+          <li class="header__menu-item"><a href="#depoimentos">Depoimentos</a></li>
+          <li class="header__menu-item"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -40,14 +41,14 @@
 
   <main id="conteudo-principal">
     <!-- Home / Hero -->
-    <section id="home" class="hero" aria-labelledby="titulo-hero">
-      <div class="container hero-container">
-        <div class="hero-texto">
-          <h1 id="titulo-hero">Criamos experiências digitais que conectam marcas e pessoas</h1>
-          <p>Somos especialistas em design responsivo, desenvolvimento web e branding — combinando estética, estratégia e performance.</p>
-          <a href="#servicos" class="btn primario">Conheça nossos serviços</a>
+    <section id="home" class="hero" aria-labelledby="hero__title">
+      <div class="container hero__container">
+        <div class="hero__texto">
+          <h1 id="hero__title" class="hero__title">Criamos experiências digitais que conectam marcas e pessoas</h1>
+          <p class="hero__desc">Somos especialistas em design responsivo, desenvolvimento web e branding — combinando estética, estratégia e performance.</p>
+          <a href="#servicos" class="btn btn--primary">Conheça nossos serviços</a>
         </div>
-        <picture class="hero-imagem">
+        <picture class="hero__imagem">
           <source srcset="https://picsum.photos/800/600?random=1 800w, https://picsum.photos/1200/900?random=1 1200w" sizes="(max-width: 48rem) 90vw, 40vw" type="image/jpeg">
           <img src="https://picsum.photos/1200/900?random=1" alt="Equipe criativa trabalhando em projetos de design" loading="lazy">
         </picture>
@@ -55,123 +56,123 @@
     </section>
 
     <!-- Sobre Nós -->
-    <section id="sobre" class="sobre" aria-labelledby="titulo-sobre">
-      <div class="container sobre-container">
-        <h2 id="titulo-sobre">Sobre Nós</h2>
-        <p>Na Agência Criativa Web, acreditamos em design centrado nas pessoas. Valorizamos acessibilidade, clareza e identidade forte, com foco em resultados mensuráveis e experiências memoráveis.</p>
-        <ul class="valores" aria-label="Valores da agência">
-          <li>
-            <h3>Propósito</h3>
-            <p>Criar soluções digitais que sejam úteis, inclusivas e belas.</p>
+    <section id="sobre" class="sobre" aria-labelledby="sobre__title">
+      <div class="container sobre__container">
+        <h2 id="sobre__title" class="sobre__title">Sobre Nós</h2>
+        <p class="sobre__desc">Na Agência Criativa Web, acreditamos em design centrado nas pessoas. Valorizamos acessibilidade, clareza e identidade forte, com foco em resultados mensuráveis e experiências memoráveis.</p>
+        <ul class="sobre__valores" aria-label="Valores da agência">
+          <li class="sobre__valores-item">
+            <h3 class="sobre__valores-title">Propósito</h3>
+            <p class="sobre__valores-desc">Criar soluções digitais que sejam úteis, inclusivas e belas.</p>
           </li>
-          <li>
-            <h3>Parceria</h3>
-            <p>Trabalhamos como extensão da sua equipe, com diálogo e transparência.</p>
+          <li class="sobre__valores-item">
+            <h3 class="sobre__valores-title">Parceria</h3>
+            <p class="sobre__valores-desc">Trabalhamos como extensão da sua equipe, com diálogo e transparência.</p>
           </li>
-          <li>
-            <h3>Excelência</h3>
-            <p>Qualidade em cada detalhe: do conceito ao código.</p>
+          <li class="sobre__valores-item">
+            <h3 class="sobre__valores-title">Excelência</h3>
+            <p class="sobre__valores-desc">Qualidade em cada detalhe: do conceito ao código.</p>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Serviços (Grid) -->
-    <section id="servicos" class="servicos" aria-labelledby="titulo-servicos">
-      <div class="container servicos-container">
-        <h2 id="titulo-servicos">Serviços</h2>
-        <div class="grid-servicos" role="list" aria-label="Lista de serviços oferecidos">
-          <article class="card-servico" role="listitem">
-            <picture>
+    <section id="servicos" class="servicos" aria-labelledby="servicos__title">
+      <div class="container servicos__container">
+        <h2 id="servicos__title" class="servicos__title">Serviços</h2>
+        <div class="servicos__grid" role="list" aria-label="Lista de serviços oferecidos">
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=2 400w, https://picsum.photos/800/600?random=2 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=2" alt="Peças de design gráfico coloridas" loading="lazy">
             </picture>
-            <h3>Design gráfico</h3>
-            <p>Identidades visuais, materiais promocionais e sistemas gráficos consistentes.</p>
+            <h3 class="servicos__card-title">Design gráfico</h3>
+            <p class="servicos__card-desc">Identidades visuais, materiais promocionais e sistemas gráficos consistentes.</p>
           </article>
 
-          <article class="card-servico" role="listitem">
-            <picture>
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=3 400w, https://picsum.photos/800/600?random=3 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=3" alt="Protótipos de interface em telas" loading="lazy">
             </picture>
-            <h3>Desenvolvimento web</h3>
-            <p>Sites rápidos, acessíveis e responsivos com SEO técnico e boas práticas.</p>
+            <h3 class="servicos__card-title">Desenvolvimento web</h3>
+            <p class="servicos__card-desc">Sites rápidos, acessíveis e responsivos com SEO técnico e boas práticas.</p>
           </article>
 
-          <article class="card-servico" role="listitem">
-            <picture>
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=4 400w, https://picsum.photos/800/600?random=4 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=4" alt="Materiais de branding e guidelines" loading="lazy">
             </picture>
-            <h3>Branding</h3>
-            <p>Posicionamento, voz da marca e guias de estilo para consistência total.</p>
+            <h3 class="servicos__card-title">Branding</h3>
+            <p class="servicos__card-desc">Posicionamento, voz da marca e guias de estilo para consistência total.</p>
           </article>
 
-          <article class="card-servico" role="listitem">
-            <picture>
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=5 400w, https://picsum.photos/800/600?random=5 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=5" alt="Dashboard com métricas de marketing digital" loading="lazy">
             </picture>
-            <h3>Marketing digital</h3>
-            <p>Campanhas orientadas por dados e conteúdo de alto impacto.</p>
+            <h3 class="servicos__card-title">Marketing digital</h3>
+            <p class="servicos__card-desc">Campanhas orientadas por dados e conteúdo de alto impacto.</p>
           </article>
 
-          <article class="card-servico" role="listitem">
-            <picture>
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=6 400w, https://picsum.photos/800/600?random=6 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=6" alt="Teste de usabilidade com usuários" loading="lazy">
             </picture>
-            <h3>UX Research</h3>
-            <p>Pesquisas com usuários para nortear decisões e aumentar conversão.</p>
+            <h3 class="servicos__card-title">UX Research</h3>
+            <p class="servicos__card-desc">Pesquisas com usuários para nortear decisões e aumentar conversão.</p>
           </article>
 
-          <article class="card-servico" role="listitem">
-            <picture>
+          <article class="servicos__card" role="listitem">
+            <picture class="servicos__card-img">
               <source srcset="https://picsum.photos/400/300?random=7 400w, https://picsum.photos/800/600?random=7 800w" sizes="(max-width: 48rem) 100vw, 20rem" type="image/jpeg">
               <img src="https://picsum.photos/800/600?random=7" alt="Protótipo de aplicativo móvel" loading="lazy">
             </picture>
-            <h3>Produtos digitais</h3>
-            <p>Concepção e prototipação de apps, plataformas e serviços digitais.</p>
+            <h3 class="servicos__card-title">Produtos digitais</h3>
+            <p class="servicos__card-desc">Concepção e prototipação de apps, plataformas e serviços digitais.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- Depoimentos -->
-    <section id="depoimentos" class="depoimentos" aria-labelledby="titulo-depoimentos">
-      <div class="container depoimentos-container">
-        <h2 id="titulo-depoimentos">Depoimentos</h2>
-        <div class="lista-depoimentos" role="list" aria-label="Depoimentos de clientes">
-          <figure class="depoimento" role="listitem">
-            <blockquote>
+    <section id="depoimentos" class="depoimentos" aria-labelledby="depoimentos__title">
+      <div class="container depoimentos__container">
+        <h2 id="depoimentos__title" class="depoimentos__title">Depoimentos</h2>
+        <div class="depoimentos__list" role="list" aria-label="Depoimentos de clientes">
+          <figure class="depoimentos__item" role="listitem">
+            <blockquote class="depoimentos__texto">
               “Transformaram nossa presença online. O novo site elevou a marca e aumentou os leads.”
             </blockquote>
-            <figcaption>— Marina S., diretora de marketing</figcaption>
+            <figcaption class="depoimentos__autor">— Marina S., diretora de marketing</figcaption>
           </figure>
 
-          <figure class="depoimento" role="listitem">
-            <blockquote>
+          <figure class="depoimentos__item" role="listitem">
+            <blockquote class="depoimentos__texto">
               “Entregaram rápido, com qualidade e pensaram em acessibilidade desde o começo.”
             </blockquote>
-            <figcaption>— Carlos R., fundador</figcaption>
+            <figcaption class="depoimentos__autor">— Carlos R., fundador</figcaption>
           </figure>
 
-          <figure class="depoimento" role="listitem">
-            <blockquote>
+          <figure class="depoimentos__item" role="listitem">
+            <blockquote class="depoimentos__texto">
               “Equipe criativa e técnica. Resultado acima do esperado.”
             </blockquote>
-            <figcaption>— Aline P., gerente de produto</figcaption>
+            <figcaption class="depoimentos__autor">— Aline P., gerente de produto</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
     <!-- Contato -->
-    <section id="contato" class="contato" aria-labelledby="titulo-contato">
-      <div class="container contato-container">
-        <h2 id="titulo-contato">Contato</h2>
-        <div class="contato-info">
+    <section id="contato" class="contato" aria-labelledby="contato__title">
+      <div class="container contato__container">
+        <h2 id="contato__title" class="contato__title">Contato</h2>
+        <div class="contato__info">
           <address>
             <p><strong>Endereço:</strong> Av. Exemplo, 123 — Praia Grande, SP</p>
             <p><strong>Telefone:</strong> <a href="tel:+5511999999999">+55 (11) 99999-9999</a></p>
@@ -179,35 +180,36 @@
           </address>
         </div>
 
-        <form class="form-contato" action="#" method="post" aria-describedby="descricao-form">
+        <form class="contato__form" action="#" method="post" aria-describedby="descricao-form">
           <p id="descricao-form">Preencha o formulário para falar com nossa equipe.</p>
 
-          <div class="campo">
+          <div class="contato__campo">
             <label for="nome">Nome</label>
             <input id="nome" name="nome" type="text" placeholder="Seu nome" required aria-required="true">
           </div>
 
-          <div class="campo">
+          <div class="contato__campo">
             <label for="email">E-mail</label>
             <input id="email" name="email" type="email" placeholder="seu@email.com" required aria-required="true">
           </div>
 
-          <div class="campo">
+          <div class="contato__campo">
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como podemos ajudar?" required aria-required="true"></textarea>
           </div>
 
-          <button type="submit" class="btn primario">Enviar mensagem</button>
+          <button type="submit" class="btn btn--primary">Enviar mensagem</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="rodape" role="contentinfo">
-    <div class="container rodape-container">
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__container">
       <p>&copy; <span id="ano-atual"></span> Agência Criativa Web. Todos os direitos reservados.</p>
       <nav aria-label="Links do rodapé">
-        <ul class="rodape-links">
+        <ul class="footer__links">
           <li><a href="#sobre">Quem somos</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#contato">Contato</a></li>
