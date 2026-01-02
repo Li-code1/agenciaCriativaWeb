@@ -1,8 +1,8 @@
 ```markdown
 # Agência Criativa Web 🌐🎨
 
-Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5** e **CSS3**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox** e **CSS Grid**.  
-O projeto demonstra boas práticas de semântica, acessibilidade e adaptação para diferentes tamanhos de tela.
+Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5** e **CSS3**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox**, **CSS Grid** e a metodologia **BEM** para nomenclatura de classes.  
+O projeto demonstra boas práticas de semântica, acessibilidade, modularização e adaptação para diferentes tamanhos de tela.
 
 ---
 
@@ -13,17 +13,19 @@ O projeto demonstra boas práticas de semântica, acessibilidade e adaptação p
   - Alinhado com Flexbox.
   - Versão responsiva com hambúrguer menu para telas menores.
 - **Seções principais**:
-  - **Home**: banner de boas-vindas com destaque para o diferencial da agência.
-  - **Sobre Nós**: descrição da agência e seus valores.
-  - **Serviços**: estruturados em **CSS Grid** para um layout flexível.
-  - **Depoimentos**: comentários fictícios de clientes.
-  - **Contato**: informações de contato e formulário acessível.
-- **Formulário de contato**:
+  - **Home (`.hero`)**: banner de boas-vindas com destaque para o diferencial da agência.
+  - **Sobre Nós (`.sobre`)**: descrição da agência e seus valores.
+  - **Serviços (`.servicos`)**: estruturados em **CSS Grid** para um layout flexível.
+  - **Depoimentos (`.depoimentos`)**: comentários fictícios de clientes.
+  - **Contato (`.contato`)**: informações de contato e formulário acessível.
+- **Formulário de contato (`.form-contato`)**:
   - Campos para nome, e-mail e mensagem.
   - Labels e atributos `required` para acessibilidade.
 - **Imagens responsivas** com `srcset` e `sizes`.
 - **Unidades relativas** (`rem`, `em`, `%`, `vh`, `vw`, `fr`) para garantir flexibilidade.
 - **Media queries** para adaptação em diferentes resoluções.
+- **Nomenclatura BEM**:
+  - Exemplo: `.card-servico__title`, `.header__menu-item`, `.hero__desc`.
 
 ---
 
@@ -35,6 +37,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade e adaptação p
   - CSS Grid para layout dos serviços.
   - Variáveis CSS para cores e espaçamentos.
   - Media queries para responsividade.
+  - Metodologia **BEM** para organização e manutenção do CSS.
 - **Google Fonts**: tipografia moderna (Inter).
 - **JavaScript simples**: atualização automática do ano no rodapé.
 
@@ -44,8 +47,8 @@ O projeto demonstra boas práticas de semântica, acessibilidade e adaptação p
 
 ```
 /
-├── index.html        # Página principal
-├── estilos.css       # Estilos externos
+├── index.html        # Página principal (HTML5 semântico e acessível)
+├── estilos.css       # Estilos externos (refatorados com BEM)
 └── README.md         # Documentação do projeto
 ```
 
@@ -101,6 +104,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade e adaptação p
 - Implementar envio real do formulário com backend (Node.js, PHP ou outro).
 - Adicionar seção de portfólio com projetos interativos.
 - Criar animações leves com CSS para transições.
+- Expandir uso de **BEM** em novos componentes (ex.: portfólio, blog).
 
 ---
 

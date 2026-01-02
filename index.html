@@ -15,13 +15,11 @@
 
   <header class="topo" role="banner">
     <div class="container header-container">
-      <a href="#" class="logo" aria-label="Página inicial Agência Criativa Web">
-        <!-- Logo fictício acessível -->
+      <a href="#home" class="logo" aria-label="Página inicial Agência Criativa Web">
         <span aria-hidden="true">🎨</span>
         <span class="logo-text">Agência Criativa Web</span>
       </a>
 
-      <!-- Controle de navegação responsiva (hambúrguer com checkbox) -->
       <input type="checkbox" id="toggle-menu" class="toggle-menu" aria-label="Abrir ou fechar menu de navegação">
       <label for="toggle-menu" class="menu-btn" aria-hidden="true">
         <span class="menu-icon"></span>
@@ -50,7 +48,6 @@
           <a href="#servicos" class="btn primario">Conheça nossos serviços</a>
         </div>
         <picture class="hero-imagem">
-          <!-- Imagem responsiva com srcset -->
           <source srcset="https://picsum.photos/800/600?random=1 800w, https://picsum.photos/1200/900?random=1 1200w" sizes="(max-width: 48rem) 90vw, 40vw" type="image/jpeg">
           <img src="https://picsum.photos/1200/900?random=1" alt="Equipe criativa trabalhando em projetos de design" loading="lazy">
         </picture>
@@ -219,7 +216,6 @@
       </nav>
     </div>
     <script>
-      // Atualiza ano automaticamente, sem prejudicar acessibilidade
       document.getElementById('ano-atual').textContent = new Date().getFullYear();
     </script>
   </footer>
