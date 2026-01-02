@@ -24,8 +24,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Imagens responsivas** com `srcset` e `sizes`.
 - **Unidades relativas** (`rem`, `em`, `%`, `vh`, `vw`, `fr`) para garantir flexibilidade.
 - **Media queries** para adaptação em diferentes resoluções.
-- **Nomenclatura BEM**:
-  - Exemplo: `.card-servico__title`, `.header__menu-item`, `.hero__desc`.
+- **Nomenclatura BEM** para nomeclatura de classes.
 
 ---
 
