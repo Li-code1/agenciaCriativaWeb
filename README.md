@@ -1,6 +1,7 @@
+---
 
 ```markdown
-# Agência Criativa Web 
+# Agência Criativa Web
 
 Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5**, **CSS3** e agora refatorado com **Sass**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox**, **CSS Grid** e a metodologia **BEM** para nomenclatura de classes.  
 O projeto demonstra boas práticas de semântica, acessibilidade, modularização e adaptação para diferentes tamanhos de tela.
@@ -53,7 +54,8 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 /
 ├── index.html        # Página principal (HTML5 semântico e acessível)
 ├── estilos.css       # Estilos externos (compilados do Sass)
-├── /sass             # Pasta com partials Sass
+├── /scss             # Pasta com partials Sass
+    ├── _base.scss
 │   ├── _variaveis.scss
 │   ├── _mixins.scss
 │   ├── _layout.scss
