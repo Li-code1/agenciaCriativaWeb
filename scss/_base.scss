@@ -1,0 +1,19 @@
+@use 'variaveis' as *;
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { font-size: 100%; scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: $cor-texto;
+  background: linear-gradient(180deg, $cor-bg 0%, #0c1219 100%);
+  line-height: 1.6;
+}
+
+img, picture, svg, video { display: block; max-width: 100%; height: auto; }
+
+a { color: $cor-texto; text-decoration: none; }

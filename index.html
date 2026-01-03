@@ -8,36 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
 <body>
   <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
 
   <!-- Header -->
-  <header class="header" role="banner">
-    <div class="container header__container">
-      <a href="#home" class="header__logo" aria-label="Página inicial Agência Criativa Web">
-        <span aria-hidden="true">🎨</span>
-        <span class="header__logo-text">Agência Criativa Web</span>
-      </a>
-
-      <input type="checkbox" id="toggle-menu" class="header__toggle" aria-label="Abrir ou fechar menu de navegação">
-      <label for="toggle-menu" class="header__menu-btn" aria-hidden="true">
-        <span class="header__menu-icon"></span>
-        <span class="header__menu-text">Menu</span>
-      </label>
-
-      <nav class="header__nav" aria-label="Navegação principal">
-        <ul class="header__menu">
-          <li class="header__menu-item"><a href="#home">Home</a></li>
-          <li class="header__menu-item"><a href="#sobre">Sobre Nós</a></li>
-          <li class="header__menu-item"><a href="#servicos">Serviços</a></li>
-          <li class="header__menu-item"><a href="#depoimentos">Depoimentos</a></li>
-          <li class="header__menu-item"><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+  <header class="header">
+  <div class="header__container">
+    <!-- Logo -->
+    <div class="header__logo">
+      <span class="header__logo-text">Agência Criativa</span>
     </div>
-  </header>
+
+    <!-- Toggle invisível para controlar o menu mobile -->
+    <input type="checkbox" id="menu-toggle" class="header__toggle">
+
+    <!-- Botão hambúrguer (visível apenas em telas pequenas) -->
+    <label for="menu-toggle" class="header__menu-btn">
+      <span class="header__menu-icon">☰</span>
+    </label>
+
+    <!-- Navegação -->
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="#sobre">Sobre</a></li>
+        <li class="header__menu-item"><a href="#servicos">Serviços</a></li>
+        <li class="header__menu-item"><a href="#depoimentos">Depoimentos</a></li>
+        <li class="header__menu-item"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
 
   <main id="conteudo-principal">
     <!-- Home / Hero -->

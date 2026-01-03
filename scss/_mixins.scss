@@ -1,0 +1,23 @@
+@use 'variaveis' as *;
+
+// Mixin para centralizar com flex
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para botão básico
+@mixin botao($bg, $color: #fff) {
+  background: $bg;
+  color: $color;
+  padding: 0.875em 1.25em;
+  border-radius: $raio;
+  font-weight: 600;
+  transition: transform 200ms ease, background 200ms ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: darken($bg, 10%);
+  }
+}

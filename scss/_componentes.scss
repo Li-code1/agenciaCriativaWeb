@@ -1,0 +1,126 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+/* Botões */
+.btn {
+  &--primary {
+    @include botao($cor-primaria);
+    box-shadow: 0 0.5rem 1.25rem rgba(79, 125, 253, 0.28);
+  }
+}
+
+/* Cards de serviços */
+.servicos__card {
+  background: $cor-card;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: $raio;
+  display: flex;
+  flex-direction: column;
+  gap: $espaco-2;
+
+  &-img {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;        // mantém proporção
+      object-fit: cover;   // corta excesso sem distorcer
+      border-radius: $raio;
+      display: block;
+    }
+  }
+
+  &-title {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    margin: 0 $espaco-3;
+  }
+
+  &-desc {
+    margin: 0 $espaco-3 $espaco-3;
+    color: $cor-texto-sec;
+  }
+}
+
+/* Hero imagem */
+.hero__imagem {
+  width: 100%;
+  max-width: 600px;   // limite em telas grandes
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: $raio;
+    display: block;
+  }
+}
+
+/* Formulário de contato */
+.contato__form {
+  display: grid;
+  gap: $espaco-2;
+  background: $cor-card;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: $raio;
+  padding: $espaco-3;
+
+  label {
+    font-weight: 600;
+  }
+
+  input,
+  textarea {
+    background: #0e141c;
+    color: $cor-texto;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.5rem;
+    padding: 0.75em 1em;
+    font-size: 1rem;
+
+    &::placeholder {
+      color: $cor-texto-sec;
+    }
+  }
+}
+
+/* Depoimentos */
+.depoimentos__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $espaco-3;
+}
+
+.depoimentos__item {
+  background: $cor-card;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: $raio;
+  padding: $espaco-3;
+
+  .depoimentos__texto {
+    font-size: clamp(1rem, 2.2vw, 1.125rem);
+    margin: 0 0 $espaco-2;
+  }
+
+  .depoimentos__autor {
+    color: $cor-texto-sec;
+  }
+}
+
+/* Responsividade extra para imagens */
+@media (max-width: 64rem) {
+  .hero__imagem {
+    max-width: 100%;   // ocupa toda largura em tablets
+  }
+}
+
+@media (max-width: 48rem) {
+  .hero__imagem {
+    max-width: 100%;   // ocupa toda largura em celulares
+  }
+
+  .servicos__card-img img {
+    max-height: 200px; // limite menor em telas pequenas
+  }
+}

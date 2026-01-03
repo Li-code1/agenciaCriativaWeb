@@ -1,7 +1,9 @@
-```markdown
-# Agência Criativa Web 🌐🎨
+---
 
-Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5** e **CSS3**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox**, **CSS Grid** e a metodologia **BEM** para nomenclatura de classes.  
+```markdown
+# Agência Criativa Web
+
+Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5**, **CSS3** e agora refatorado com **Sass**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox**, **CSS Grid** e a metodologia **BEM** para nomenclatura de classes.  
 O projeto demonstra boas práticas de semântica, acessibilidade, modularização e adaptação para diferentes tamanhos de tela.
 
 ---
@@ -12,6 +14,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Menu de navegação**:
   - Alinhado com Flexbox.
   - Versão responsiva com hambúrguer menu para telas menores.
+  - Cabeçalho fixo no topo, com altura controlada e sem sobrepor o conteúdo.
 - **Seções principais**:
   - **Home (`.hero`)**: banner de boas-vindas com destaque para o diferencial da agência.
   - **Sobre Nós (`.sobre`)**: descrição da agência e seus valores.
@@ -21,20 +24,23 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Formulário de contato (`.form-contato`)**:
   - Campos para nome, e-mail e mensagem.
   - Labels e atributos `required` para acessibilidade.
-- **Imagens responsivas** com `srcset` e `sizes`.
+- **Imagens responsivas**:
+  - Ajustadas com `max-width: 100%` e `height: auto`.
+  - Limite de altura aplicado para evitar imagens muito grandes.
+  - Adaptadas via media queries para diferentes tamanhos de tela.
 - **Unidades relativas** (`rem`, `em`, `%`, `vh`, `vw`, `fr`) para garantir flexibilidade.
 - **Media queries** para adaptação em diferentes resoluções.
-- **Nomenclatura BEM** para nomeclatura de classes.
+- **Nomenclatura BEM** para organização e manutenção do CSS.
 
 ---
 
 ## 🛠️ Tecnologias utilizadas
 
 - **HTML5**: estrutura semântica e acessível.
-- **CSS3**:
+- **CSS3/Sass**:
   - Flexbox para alinhamento.
   - CSS Grid para layout dos serviços.
-  - Variáveis CSS para cores e espaçamentos.
+  - Variáveis Sass para cores e espaçamentos.
   - Media queries para responsividade.
   - Metodologia **BEM** para organização e manutenção do CSS.
 - **Google Fonts**: tipografia moderna (Inter).
@@ -47,7 +53,14 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 ```
 /
 ├── index.html        # Página principal (HTML5 semântico e acessível)
-├── estilos.css       # Estilos externos (refatorados com BEM)
+├── estilos.css       # Estilos externos (compilados do Sass)
+├── /scss             # Pasta com partials Sass
+    ├── _base.scss
+│   ├── _variaveis.scss
+│   ├── _mixins.scss
+│   ├── _layout.scss
+│   ├── _componentes.scss
+│   └── estilos.scss  # Arquivo principal que importa todos os partials
 └── README.md         # Documentação do projeto
 ```
 
@@ -61,6 +74,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
   - Texto claro (`#eaf0ff`) e secundário (`#b8c3da`).
 - **Tipografia**: [Inter](https://fonts.google.com/specimen/Inter), limpa e profissional.
 - **Estilo**: moderno, minimalista e com foco em acessibilidade.
+- **Logo**: atualmente apenas texto estilizado, sem imagem.
 
 ---
 
@@ -69,7 +83,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - Layout adaptado com **media queries**:
   - Até **1024px**: ajustes em grids e hero.
   - Até **768px**: menu hambúrguer, grids empilhados.
-- Imagens otimizadas com `srcset` e `sizes`.
+- Imagens otimizadas com `srcset`, `sizes` e limites de altura.
 - Uso de unidades relativas para escalabilidade.
 
 ---
@@ -114,3 +128,5 @@ Sinta-se à vontade para adaptar e evoluir conforme suas necessidades.
 
 ---
 ```
+
+---
