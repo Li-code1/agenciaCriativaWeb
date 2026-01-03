@@ -1,3 +1,4 @@
+
 ---
 
 ```markdown
@@ -5,8 +6,6 @@
 
 Um site moderno e responsivo para a **Agência Criativa Web**, desenvolvido com **HTML5**, **CSS3** e agora refatorado com **Sass**, aplicando conceitos de **Design Responsivo**, **Unidades Relativas**, **Flexbox**, **CSS Grid** e a metodologia **BEM** para nomenclatura de classes.  
 O projeto demonstra boas práticas de semântica, acessibilidade, modularização e adaptação para diferentes tamanhos de tela.
-
----
 
 ## 🚀 Funcionalidades
 
@@ -32,8 +31,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Media queries** para adaptação em diferentes resoluções.
 - **Nomenclatura BEM** para organização e manutenção do CSS.
 
----
-
 ## 🛠️ Tecnologias utilizadas
 
 - **HTML5**: estrutura semântica e acessível.
@@ -46,8 +43,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Google Fonts**: tipografia moderna (Inter).
 - **JavaScript simples**: atualização automática do ano no rodapé.
 
----
-
 ## 📂 Estrutura do projeto
 
 ```
@@ -55,7 +50,7 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 ├── index.html        # Página principal (HTML5 semântico e acessível)
 ├── estilos.css       # Estilos externos (compilados do Sass)
 ├── /scss             # Pasta com partials Sass
-    ├── _base.scss
+│   ├── _base.scss
 │   ├── _variaveis.scss
 │   ├── _mixins.scss
 │   ├── _layout.scss
@@ -63,8 +58,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 │   └── estilos.scss  # Arquivo principal que importa todos os partials
 └── README.md         # Documentação do projeto
 ```
-
----
 
 ## 🎨 Identidade visual
 
@@ -76,8 +69,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - **Estilo**: moderno, minimalista e com foco em acessibilidade.
 - **Logo**: atualmente apenas texto estilizado, sem imagem.
 
----
-
 ## 📱 Responsividade
 
 - Layout adaptado com **media queries**:
@@ -86,8 +77,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - Imagens otimizadas com `srcset`, `sizes` e limites de altura.
 - Uso de unidades relativas para escalabilidade.
 
----
-
 ## 🧩 Acessibilidade
 
 - Uso de elementos semânticos (`header`, `main`, `section`, `nav`, `footer`).
@@ -95,8 +84,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - `aria-label`, `aria-labelledby` e `aria-describedby` para navegação assistiva.
 - Link de **skip to content** para leitores de tela.
 - Foco visível em elementos interativos.
-
----
 
 ## 📖 Como executar
 
@@ -110,8 +97,6 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
    ```
 3. Abra o arquivo `index.html` em qualquer navegador moderno.
 
----
-
 ## 📌 Melhorias futuras
 
 - Implementar envio real do formulário com backend (Node.js, PHP ou outro).
@@ -119,14 +104,10 @@ O projeto demonstra boas práticas de semântica, acessibilidade, modularizaçã
 - Criar animações leves com CSS para transições.
 - Expandir uso de **BEM** em novos componentes (ex.: portfólio, blog).
 
----
-
 ## 📄 Licença
 
 Este projeto é de uso livre para fins educacionais e demonstração.  
 Sinta-se à vontade para adaptar e evoluir conforme suas necessidades.
-
----
 ```
 
 ---
